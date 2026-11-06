@@ -1,32 +1,92 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EL DEEP | ABO TOLIN</title>
+<title>Apo Tolin 👑</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#0a0a0a;color:#fff;text-align:center;padding:20px;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
-.logo{width:120px;height:120px;border-radius:50%;background:#111;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-size:60px;margin:0 auto 15px}
-h1{font-size:36px;letter-spacing:2px}
-h1 span{color:#25D366}
-p{color:#aaa;margin:10px 0 25px}
-.btn{display:block;background:#1a1a1a;border:1px solid #333;color:#fff;text-decoration:none;padding:16px;border-radius:15px;margin:10px auto;max-width:400px;font-size:18px;font-weight:bold}
-.btn:hover{background:#222}
-.whats{background:#25D366;color:#000}
-.insta{background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);color:#fff}
-.tele{background:#229ED9;color:#fff}
-small{color:#666;margin-top:20px;display:block}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#000;color:#fff;min-height:100vh}
+.top{position:relative;height:520px;overflow:hidden}
+.top img{width:100%;height:100%;object-fit:cover;object-position:top}
+.top::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,#000 95%)}
+.wrap{position:relative;margin-top:-90px;z-index:2;max-width:440px;margin-left:auto;margin-right:auto;padding:0 18px 25px;text-align:center}
+.name-box{background:linear-gradient(180deg,#1a0a2e,#0a0a0a);border:2px solid #a855f7;border-radius:25px;padding:14px;box-shadow:0 0 25px #a855f7aa, inset 0 0 20px #a855f755;margin-bottom:20px}
+.name-box h1{font-family:'Great Vibes',cursive;font-size:48px;font-weight:400;line-height:1}
+.name-box h1 span{font-size:32px}
+.name-box p{letter-spacing:8px;color:#c084fc;font-size:13px;margin-top:6px;font-weight:700}
+
+/* SOCIAL BUTTONS - EXACT IMAGE STYLE */
+.card {
+    display:flex;
+    direction:ltr;
+    align-items:center;
+    gap:13px;
+    padding:10px 15px;
+    min-height:88px;
+    margin-bottom:20px;
+    border-radius:35px;
+    text-decoration:none;
+    color:white;
+    background:
+      linear-gradient(145deg,#160522,#050008 55%,#210b35);
+    border:3px solid #a855f7;
+    outline:1px solid #e9c5ff55;
+    box-shadow:
+      0 0 10px #a855f7,
+      0 0 22px #8b00ff99,
+      inset 0 0 15px #a855f755;
+    position:relative;
+    transition:.3s;
+}
+.card:active { transform:scale(.96); }
+.card .ic {
+    width:65px;
+    height:65px;
+    min-width:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:37px;
+    flex-shrink:0;
+    border:3px solid #d8a5ff;
+    box-shadow:0 0 15px #a855f7;
+}
+/* WHATSAPP */
+.wa { border-color:#a855f7; box-shadow:0 0 18px #a855f7, inset 0 0 18px #a855f744; }
+.wa .ic { background:#20c963; color:white; border-color:#a8ffbd; border-radius:50%; box-shadow:0 0 20px #25D366; }
+/* INSTAGRAM */
+.ig { border-color:#d946ef; box-shadow:0 0 18px #d946ef; }
+.ig .ic { background:linear-gradient(45deg,#ffb900,#ff0069,#833ab4); color:white; border-color:#ff9af0; border-radius:20px; box-shadow:0 0 18px #e130a0; }
+/* TELEGRAM */
+.tg { border-color:#229ED9; box-shadow:0 0 18px #229ED9; }
+.tg .ic { background:#168bd0; color:white; border-color:#8cddff; border-radius:50%; box-shadow:0 0 20px #229ED9; }
+/* TIKTOK */
+.tk { border-color:#d946ef; box-shadow:0 0 18px #d946ef; }
+.tk .ic { background:#050505; color:white; border-color:#d946ef; border-radius:20px; text-shadow: 3px 2px #fe2c55, -3px -2px #25f4ee; box-shadow:0 0 18px #d946ef; }
+/* ARROW */
+.card .arr { margin-left:auto; font-size:30px; color:#e879ff; text-shadow:0 0 12px #a855f7; }
+/* CROWN */
+.card .crown { font-size:25px; color:#e6c7ff; text-shadow:0 0 12px #a855f7; }
+/* DIVIDER */
+.card .line { width:2px; height:40px; background:#d8a5ff; box-shadow:0 0 8px #a855f7; }
+.card b{font-size:28px;font-family:'Great Vibes',cursive;font-weight:400;letter-spacing:1px}
+.footer{margin-top:22px;color:#a855f7;font-size:12px;letter-spacing:2px}
+.footer b{font-family:'Great Vibes',cursive;font-size:28px;color:#fff;letter-spacing:0;display:block}
 </style>
 </head>
 <body>
-<div class="logo">🖤</div>
-<h1>EL <span>DEEP</span></h1>
-<p>ABO TOLIN - Official Website</p>
-<a class="btn whats" href="https://wa.me/201025431512">واتساب - 01025431512</a>
-<a class="btn insta" href="https://instagram.com/x_deepo_x">انستجرام - x_deepo_x</a>
-<a class="btn tele" href="https://t.me/x_deepo_x">تليجرام</a>
-<a class="btn" href="https://www.tiktok.com/@x_deepo_x">تيك توك</a>
-<small>© 2026 EL DEEP - All Rights Reserved</small>
+<div class="top"><img src="bg.jpg"></div>
+<div class="wrap">
+<div class="name-box"><h1>Apo Tolin <span>💔🕊️🥷</span></h1><p>✦ FOLLOW ME ✦</p></div>
+
+<a class="card wa" href="https://wa.me/201025431512"><div class="ic">💬</div><div class="line"></div><b>WhatsApp</b><div class="arr">»</div><div class="crown">👑</div></a>
+<a class="card ig" href="https://instagram.com/x_deepo_x"><div class="ic">📸</div><div class="line"></div><b>Instagram</b><div class="arr">»</div><div class="crown">👑</div></a>
+<a class="card tg" href="https://t.me/x_deepo_x"><div class="ic">✈️</div><div class="line"></div><b>Telegram</b><div class="arr">»</div><div class="crown">👑</div></a>
+<a class="card tk" href="https://www.tiktok.com/@x___d33_p_o"><div class="ic">🎵</div><div class="line"></div><b>TikTok</b><div class="arr">»</div><div class="crown">👑</div></a>
+
+<div class="footer">👑<b>Apo Tolin</b>— All Rights Reserved © 2026 —</div>
+</div>
 </body>
 </html>
